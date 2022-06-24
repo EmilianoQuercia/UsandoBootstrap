@@ -14,7 +14,7 @@ body{
 
 /*-------------------- Maquetacion con Grid Index -----------------*/
 
-.contenedorIndex{
+/* .contenedorIndex{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 80px auto auto auto;
@@ -22,12 +22,12 @@ body{
                          "main     main     main     main "
                          "section  section  section  section"
                          "footer   footer   footer   footer";
-}
+} */
 
 /* Estilos para El Navegador ---------------------------------------------------------------- */
-.header{
+/* .header{
     grid-area: header;
-}
+} */
 
 .header{
     background-color: #111;
@@ -99,18 +99,15 @@ nav ul :hover ul{
 
 /* estilos para el INDEX ----------------------------------------------------------*/
 
-.mainIndex{
+/* .mainIndex{
     grid-area: main;
-}
-.img__principal{
+} */
+
+
+.imgCarrusel{
     width: 100%;
     height: 500px;
-    background-image: url(../image/img1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    
+
 }
 .img__principal h1{
     margin-left: 20px;
@@ -129,15 +126,15 @@ nav ul :hover ul{
 .sectionIndex{
     grid-area: section;
 }
-.contenedor__tarjetas{
+/* .contenedor__tarjetas{
     display: flex;
     margin: 25px; 
 
-}
+} */
 
 .card {
-	width: 25%;
-	margin: 20px; 
+	/* width: 25%; */
+	/* margin: 20px;  */
     border-radius: 30px;
     box-shadow: 1px 1px 20px  rgba(255, 0, 0, 0.281);
     display: flex;
@@ -415,13 +412,13 @@ footer a{
     .img__principal{
         height: 400px;
     }
-    .contenedor__tarjetas{
+    /* .contenedor__tarjetas{
         flex-wrap: wrap;
-    }
-    .card{
+    } */
+    /* .card{
         width: 40%;
         margin: 20px auto;
-    }
+    } */
     .contenedorServicios{
         display: block;
     }
@@ -453,10 +450,10 @@ footer a{
     .img__principal{
         height: 300px;
     }
-    .card{
+    /* .card{
         width: 80%;
         margin: 20px auto;
-    }
+    } */
     .contenedorIndex{
         grid-template-rows: 120px auto auto auto;
     }
