@@ -12,29 +12,10 @@ body{
     background-color: #000;
 }
 
-/*-------------------- Maquetacion con Grid Index -----------------*/
-
-/* .contenedorIndex{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 80px auto auto auto;
-    grid-template-areas: "header   header   header   header"
-                         "main     main     main     main "
-                         "section  section  section  section"
-                         "footer   footer   footer   footer";
-} */
-
 /* Estilos para El Navegador ---------------------------------------------------------------- */
-/* .header{
-    grid-area: header;
-} */
 
 .header{
     background-color: #111;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    width: 100%; */
     position: sticky;
     top: 0;  
     z-index: 10;
@@ -45,16 +26,7 @@ body{
     width: 150px;
 }
 
-
-.container-fluid{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
 .navbar-nav a{
-    /* text-decoration: none;
-    padding: 0 15px; */
     color: #fff;
 }
 .nav-item :hover {
@@ -70,50 +42,11 @@ body{
     background-color: #111;
 }
 
-.redes__nav ul{
-    display: flex;
-    list-style: none;
-    margin: 20px;
-}
-
-nav ul :hover ul{
-    display: block; 
-}
-
-.desplegableServicios{
-    display: none;
-    background-color: rgba(17, 17, 17, 0.822);
-    position: absolute;
-    padding: 5px 0;
-    border-radius: 3px; 
-}
-.desplegableServicios li{
-    margin: 8px 0;
-}
-
-
-.redes__nav img{
-    width: 24px;
-    margin: 0 5px;
-}
-
 /* estilos para el INDEX ----------------------------------------------------------*/
-
-/* .mainIndex{
-    grid-area: main;
-} */
-
 
 .imgCarrusel{
     width: 100%;
-    height: 500px;
-
-}
-.img__principal h1{
-    margin-left: 20px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 45px;
+    max-height: 500px;
 }
 
 .texto25años{
@@ -123,22 +56,9 @@ nav ul :hover ul{
     font-size: 30px;
 }
 
-.sectionIndex{
-    grid-area: section;
-}
-/* .contenedor__tarjetas{
-    display: flex;
-    margin: 25px; 
-
-} */
-
 .card {
-	/* width: 25%; */
-	/* margin: 20px;  */
     border-radius: 30px;
     box-shadow: 1px 1px 20px  rgba(255, 0, 0, 0.281);
-    display: flex;
-    flex-direction: column;  
     align-items: center; 
     background-color: transparent;
 }
@@ -154,38 +74,13 @@ nav ul :hover ul{
     color: #fff;
 }
 
-.card__info--titulo{
-    margin-bottom: 20px;
-}
-
-/*-------------------- Maquetacion con Grid Servicios -----------------*/
-
-.bodyServicios{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px auto auto auto;
-    grid-template-areas: "header   header"
-                         "main     main  "
-                         "footer   footer";
-}
-
-
 /* estilos para SERVICIOS ---------------------------------------------------------- */
-.mainServicios{
-    grid-area: main;
-}
+
 .contenedorServicios{
-    margin: 30px;
     color: #fff;
-    display: flex;
-    padding: 30px 0;
 }
 .flexReverse{
     flex-direction: row-reverse;
-}
-.infoServicios{
-    display: flex;
-    flex-direction: column;
 }
 
 .tituloServicios{
@@ -197,34 +92,19 @@ nav ul :hover ul{
 }
 
 .imgServicios{
-    width: 50%;
+    height: 50%;
 }
-
 
 /* estilos para GALERIA ----------------------------------------------------------- */
 
 
 .tituloGaleria{
     color: #f00;
-    margin: 15px;
-    text-align: center;
 }
 .infoGaleria{
     color: #fff;
     text-align: center;
     margin: 5px;
-}
-
-.galeria{
-    margin-top: 15px auto; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
-.galeria img{
-    width: 400px;
 }
 
 /* estilos para NOSOTROS --------------------------------------------------------------*/
@@ -235,25 +115,26 @@ nav ul :hover ul{
     background-repeat: no-repeat;
 }
 .contenedorNosotros{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* width: 100%; */
 }
-.tituloNosotros{
+/* .tituloNosotros{
     margin: 15px;
-}
+} */
 .infoNosotros{
-    margin: 20px;
-    width: 70%;
+    /* margin: 20px; */
+    /* width: 70%; */
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
 }
-.contenedorCaras{
+/* .contenedorCaras{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
-}
+} */
 .imgCaras img{
     width: 150px;
     margin: 10px 40px;
@@ -264,14 +145,7 @@ nav ul :hover ul{
     align-items: center;
 }
 
-
-
-
-
-
-
 /* estilos para CONTACTOS -------------------------------------------------------------- */
-
 
 .contenedorContactos{
     margin: 70px; 
@@ -342,12 +216,8 @@ nav ul :hover ul{
     margin: 20px 0;
 }
 
-
 /* Estilo Footer --------------------------------------------------------------------------- */
 
-.footer{
-    grid-area: footer;
-}
 
 footer{
     display: flex;
@@ -390,41 +260,9 @@ footer a{
     width: 15px;
     margin-left: 10px;
 }
-/*----------------- @media 992px--------------------- */
 
-@media (max-width: 992px){
-    .imgServicios{
-        width: 50%;
-        height: 60%;
-        margin: auto;
-    }
-    .redes__nav ul{
-        display: none;
-    }
-}
 /* ---------------------------@media 840px------------------ */
 @media (max-width: 840px){
-
-    nav ul li a{
-        padding: 0 5px;
-    }
-
-    .img__principal{
-        height: 400px;
-    }
-    /* .contenedor__tarjetas{
-        flex-wrap: wrap;
-    } */
-    /* .card{
-        width: 40%;
-        margin: 20px auto;
-    } */
-    .contenedorServicios{
-        display: block;
-    }
-    .imgServicios{
-        width: 100%;
-    }
 
     .contenedorContactos{
         flex-direction: column;
@@ -440,31 +278,6 @@ footer a{
 
 /* ------------------------------------@media 576px-------------------- */
 @media (max-width: 576px){
-    header{
-        height: 120px;
-    }
-    nav ul{
-        flex-direction: column; 
-    }
-
-    .img__principal{
-        height: 300px;
-    }
-    /* .card{
-        width: 80%;
-        margin: 20px auto;
-    } */
-    .contenedorIndex{
-        grid-template-rows: 120px auto auto auto;
-    }
-
-    .contenedorCaras{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 0 30px;
-    
-    }
 
     .contenedorContactos{
         margin: 30px;
@@ -487,9 +300,7 @@ footer a{
 /* ------------------------------------@media 420x-------------------- */
 
 @media (max-width: 420px){
-    .galeria img{
-        width: 300px;
-    }
+
     .formulario textarea{
         min-height: 80px;
     }
