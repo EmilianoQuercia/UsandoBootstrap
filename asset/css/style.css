@@ -114,27 +114,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.contenedorNosotros{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* width: 100%; */
-}
-/* .tituloNosotros{
-    margin: 15px;
-} */
-.infoNosotros{
-    /* margin: 20px; */
-    /* width: 70%; */
-    color: #fff;
-    /* text-align: center; */
-}
-/* .contenedorCaras{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 
-} */
+.infoNosotros{
+    color: #fff;
+}
 .imgCaras img{
     width: 150px;
     margin: 10px 40px;
@@ -147,11 +130,6 @@ body{
 
 /* estilos para CONTACTOS -------------------------------------------------------------- */
 
-.contenedorContactos{
-    margin: 70px; 
-    display: flex;
-    justify-content: space-evenly; 
-}
 
 .formulario img{
     background-color: #fff;
@@ -163,24 +141,15 @@ body{
 
 .formulario{
     padding: 20px 0px; 
-    width: 40%;
-    display: flex;
-    flex-direction: column;
     background-color: #222;
-    align-items: center;
     border: 20px solid #000;
     outline: 3px solid rgba(255, 0, 0, 0.8);
-    
-
 }
 .formBox{
-    width:80%;
-    margin: 10px;
     border: none;
     border-bottom: 3px solid rgba(255, 0, 0, 0.8);
     background: transparent;
     color: #fff;
-    padding: 5px;
 }
 
 .formBox:focus {
@@ -190,7 +159,6 @@ body{
 }
 .formulario textarea{
     min-height: 150px;
-    min-width: 80%;
     resize: none;
 }
 .formulario input[type="submit"]{
@@ -202,22 +170,9 @@ body{
 
 .infoContactos{
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-content: center;
-}
-
-.tituloContactos{
-    margin: 25px 0;
-    text-align: center;
-}
-.parrafoContactos{
-    margin: 20px 0;
 }
 
 /* Estilo Footer --------------------------------------------------------------------------- */
-
 
 footer{
     display: flex;
@@ -260,32 +215,8 @@ footer a{
     width: 15px;
     margin-left: 10px;
 }
-
-/* ---------------------------@media 840px------------------ */
-@media (max-width: 840px){
-
-    .contenedorContactos{
-        flex-direction: column;
-        align-items: center;
-    }
-    .formulario{
-        width: 80%;
-    }
-    .infoContactos{
-        width: 80%;
-    }
-}
-
 /* ------------------------------------@media 576px-------------------- */
 @media (max-width: 576px){
-
-    .contenedorContactos{
-        margin: 30px;
-    }
-
-    .formulario{
-        width: 100%;
-    }
 
     footer{
         flex-direction: column;
@@ -293,18 +224,6 @@ footer a{
     }
     .logoFooter{
         order: 3;
-        margin: 10px;
-    }
-}
-
-/* ------------------------------------@media 420x-------------------- */
-
-@media (max-width: 420px){
-
-    .formulario textarea{
-        min-height: 80px;
-    }
-    .contenedorContactos{
         margin: 10px;
     }
 }
