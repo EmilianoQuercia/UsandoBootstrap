@@ -1,0 +1,36 @@
+
+/* estilos para el INDEX ----------------------------------------------------------*/
+
+.imgCarrusel{
+    width: 100%;
+    max-height: 500px;
+}
+
+.texto25años{
+    padding: 20px;
+    text-align: center;
+    color: $colorPrincipal;
+    font-size: 30px;
+}
+
+.card {
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px  rgba(255, 0, 0, 0.281);
+    align-items: center; 
+    background-color: transparent;
+
+    .card__img{    
+        width: 30%;
+        margin: 10px;
+    }
+
+    .card__info{
+        padding: 30px;
+        text-align: center;
+        color: $colorTexto;
+    }
+
+}
+
+
+

@@ -1,0 +1,36 @@
+/* Estilos para El Navegador ---------------------------------------------------------------- */
+
+.header{
+    background-color: #111;
+    position: sticky;
+    top: 0;  
+    z-index: 10;
+
+    .logo{
+        margin-left: 30px;
+        padding: 10px;
+        width: 150px;
+    }
+    .colorH{
+        background-color: #333;
+    }
+    .desplegable{
+        background-color: #111;
+    }
+    .navbar-nav{
+        a{
+            color: $colorTexto;
+            &:hover {
+                color: $colorPrincipal;
+            }
+        }
+        .activar{
+            color: $colorPrincipal;
+        }
+    } 
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+
+
+/* Estilo Footer --------------------------------------------------------------------------- */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 0 30px;
+    align-items: center;
+
+    .contactos__footer{
+        color: $colorTexto;
+        padding: 10px ;
+
+        p{
+            margin: 5px;
+            text-align: center;
+        }
+    }
+
+    h3{
+        color: #bbb;
+        margin: 10px;
+        font-size: 16px;
+    }
+    ul{
+        list-style: none;
+        li{
+            margin: 7px;
+            a{
+                text-decoration: none;
+                color: $colorTexto;
+                &:hover{
+                    color: #888
+                }
+                img{
+                    width: 15px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------@media 576px-------------------- */
+@media (max-width: 576px){
+
+    footer{
+        flex-direction: column;
+        order: 1;
+        .logoFooter{
+            order: 3;
+            margin: 10px;
+        }
+    }
+    
+}

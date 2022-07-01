@@ -1,0 +1,46 @@
+
+
+/* estilos para CONTACTOS -------------------------------------------------------------- */
+
+
+.formulario{
+    padding: 20px 0px; 
+    background-color: #222;
+    border: 20px solid #000;
+    outline: 3px solid $colorPrincipal;
+
+    img{
+        background-color: #fff;
+        width: 30%;
+        padding: 15px;
+        border-radius: 50%;
+        margin: 10px;
+    }
+    .formBox{
+        border: none;
+        border-bottom: 3px solid $colorPrincipal;
+        background: transparent;
+        color: $colorTexto;
+        &:focus {
+            background: linear-gradient(to bottom, transparent,#111);
+            outline: none;
+            border-bottom: 3px solid rgb(255, 0, 0);
+        }
+    }
+    textarea{
+        min-height: 150px;
+        resize: none;
+    }
+
+    input[type="submit"]{
+        background-color: $colorPrincipal;
+        border-color: none;
+        border-radius: 7px;
+        padding: 12px;
+    }
+    
+}
+
+.infoContactos{
+    color: $colorTexto;
+}
