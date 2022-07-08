@@ -24,7 +24,7 @@
         &:focus {
             background: linear-gradient(to bottom, transparent,#111);
             outline: none;
-            border-bottom: 3px solid rgb(255, 0, 0);
+            border-bottom: 3px solid $colorPrincipal;
         }
     }
     textarea{
