@@ -34,8 +34,7 @@
         list-style: none;
         margin: 20px;
         img{
-            width: 24px;
-            margin: 0 5px;
+            @include tamanio (24px, 5px);
         }
     }
 }

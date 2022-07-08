@@ -4,37 +4,37 @@
 
 
 .formulario{
-    padding: 20px 0px; 
+    padding: map-get($formulario , padding); 
     background-color: #222;
     border: 20px solid #000;
-    outline: 3px solid $colorPrincipal;
+    outline: map-get($formulario, borde );
 
     img{
         background-color: #fff;
-        width: 30%;
+        @include tamanio (30%, 10px);
         padding: 15px;
         border-radius: 50%;
-        margin: 10px;
     }
     .formBox{
-        border: none;
-        border-bottom: 3px solid $colorPrincipal;
+        border: map-get($formulario, sinBorde );
+        border-bottom: map-get($formulario, borde );
         background: transparent;
         color: $colorTexto;
         &:focus {
             background: linear-gradient(to bottom, transparent,#111);
-            outline: none;
-            border-bottom: 3px solid $colorPrincipal;
+            outline: map-get($formulario, sinBorde );
+            border-bottom: map-get($formulario, borde );
         }
     }
     textarea{
+        @extend .formBox; //incluye todas las propiedades de la etiqueta .formBox
         min-height: 150px;
         resize: none;
     }
 
     input[type="submit"]{
         background-color: $colorPrincipal;
-        border-color: none;
+        border-color: map-get($formulario, sinBorde );
         border-radius: 7px;
         padding: 12px;
     }

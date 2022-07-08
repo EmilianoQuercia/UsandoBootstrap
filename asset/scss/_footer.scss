@@ -35,8 +35,7 @@ footer{
                     color: #888
                 }
                 img{
-                    width: 15px;
-                    margin-left: 10px;
+                    @include tamanio (15px, 0 10px);
                 }
             }
         }

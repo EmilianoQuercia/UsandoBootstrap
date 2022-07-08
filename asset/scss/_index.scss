@@ -2,7 +2,7 @@
 /* estilos para el INDEX ----------------------------------------------------------*/
 
 .tituloPrincipal{
-    color: #fff;
+    color: $colorTexto;
     position: absolute;
     top:300px;
     left:60px;
@@ -29,9 +29,8 @@
     align-items: center; 
     background-color: transparent;
 
-    .card__img{    
-        width: 30%;
-        margin: 10px;
+    .card__img{  
+        @include tamanio (30%,10px);  
     }
 
     .card__info{

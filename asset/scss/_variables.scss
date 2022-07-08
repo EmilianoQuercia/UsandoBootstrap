@@ -1,0 +1,16 @@
+
+/*--------VARIABLES--------------*/
+$colorPrincipal: #f00;
+$colorTexto: #fff;
+
+$formulario:(
+    borde: 3px solid $colorPrincipal,
+    padding: 20px 0,
+    sinBorde: none,
+);
+
+@mixin tamanio($ancho, $margenes) {
+    width: $ancho;
+    margin: $margenes;
+    
+}

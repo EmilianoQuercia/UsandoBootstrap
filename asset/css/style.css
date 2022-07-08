@@ -1,7 +1,7 @@
 @charset "UTF-8";
+/*---------------------@import FUENTES--------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap");
-/*--------VARIABLES--------------*/
 /*----------@import para SASS-----------*/
 /*------------Reseteos de Estilos--------------*/
 * {
@@ -15,6 +15,7 @@ body {
   background-color: #000;
 }
 
+/*--------VARIABLES--------------*/
 /* Estilos para El Navegador ---------------------------------------------------------------- */
 .header {
   background-color: #111;
@@ -50,7 +51,7 @@ body {
 }
 .header .redes__nav ul img {
   width: 24px;
-  margin: 0 5px;
+  margin: 5px;
 }
 
 @media (max-width: 992px) {
@@ -155,7 +156,7 @@ body {
 
 /* estilos para CONTACTOS -------------------------------------------------------------- */
 .formulario {
-  padding: 20px 0px;
+  padding: 20px 0;
   background-color: #222;
   border: 20px solid #000;
   outline: 3px solid #f00;
@@ -163,17 +164,17 @@ body {
 .formulario img {
   background-color: #fff;
   width: 30%;
+  margin: 10px;
   padding: 15px;
   border-radius: 50%;
-  margin: 10px;
 }
-.formulario .formBox {
+.formulario .formBox, .formulario textarea {
   border: none;
   border-bottom: 3px solid #f00;
   background: transparent;
   color: #fff;
 }
-.formulario .formBox:focus {
+.formulario .formBox:focus, .formulario textarea:focus {
   background: linear-gradient(to bottom, transparent, #111);
   outline: none;
   border-bottom: 3px solid #f00;
@@ -229,7 +230,7 @@ footer ul li a:hover {
 }
 footer ul li a img {
   width: 15px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 /* ------------------------------------@media 576px-------------------- */
