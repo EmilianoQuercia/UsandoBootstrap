@@ -86,6 +86,8 @@ body {
   box-shadow: 1px 1px 20px rgba(255, 0, 0, 0.281);
   align-items: center;
   background-color: transparent;
+  width: 20%;
+  margin: 30px 0;
 }
 .card .card__img {
   width: 30%;
@@ -97,10 +99,18 @@ body {
   color: #fff;
 }
 
+@media (max-width: 992px) {
+  .card {
+    width: 40%;
+  }
+}
 @media (max-width: 576px) {
   .tituloPrincipal {
     top: 25%;
     left: 5%;
+  }
+  .card {
+    width: 80%;
   }
 }
 /* estilos para SERVICIOS ---------------------------------------------------------- */
