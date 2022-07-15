@@ -114,6 +114,14 @@ body {
   }
 }
 /* estilos para SERVICIOS ---------------------------------------------------------- */
+.tituloP {
+  color: #f00;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
 .contenedorServicios {
   color: #fff;
 }
@@ -145,6 +153,7 @@ body {
   color: #fff;
   text-align: center;
   margin: 5px;
+  font-size: 18px;
 }
 
 /* estilos para NOSOTROS --------------------------------------------------------------*/
@@ -157,6 +166,9 @@ body {
 .infoNosotros {
   color: #fff;
 }
+.infoNosotros .tituloNosotros {
+  color: #f00;
+}
 
 .imgCaras {
   color: #fff;
@@ -166,6 +178,9 @@ body {
 .imgCaras img {
   width: 150px;
   margin: 10px 40px;
+}
+.imgCaras .carasInfo .nombresNosotros {
+  font-size: 26px;
 }
 
 /* estilos para CONTACTOS -------------------------------------------------------------- */
@@ -207,6 +222,12 @@ body {
 .infoContactos {
   color: #fff;
 }
+.infoContactos .tituloContactos {
+  color: #f00;
+}
+.infoContactos h2 {
+  font-size: 18px;
+}
 
 /* Estilo Footer --------------------------------------------------------------------------- */
 footer {
@@ -228,6 +249,7 @@ footer h3 {
   color: #bbb;
   margin: 10px;
   font-size: 16px;
+  text-align: center;
 }
 footer ul {
   list-style: none;

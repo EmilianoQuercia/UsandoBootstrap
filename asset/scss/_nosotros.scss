@@ -9,6 +9,9 @@
 
 .infoNosotros{
     color: $colorTexto;
+    .tituloNosotros{
+        color: $colorPrincipal;
+    }
 }
 
 .imgCaras{
@@ -18,5 +21,10 @@
 
     img{
         @include tamanio (150px, 10px 40px);
+    }
+    .carasInfo{
+        .nombresNosotros{
+            font-size: 26px;
+        }
     }
 }

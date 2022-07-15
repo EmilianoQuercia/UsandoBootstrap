@@ -43,4 +43,10 @@
 
 .infoContactos{
     color: $colorTexto;
+    .tituloContactos{
+        color:$colorPrincipal;
+    }
+    h2{
+        font-size: 18px;
+    }
 }
